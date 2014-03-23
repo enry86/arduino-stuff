@@ -1,4 +1,4 @@
 arduino-stuff
 =============
 
-ArduinoStuff
+Collection of experiments and test programs for my Arduino Uno
