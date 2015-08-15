@@ -7,7 +7,7 @@ void setup()
 {
   pinMode(pin, OUTPUT);
   digitalWrite (pin, LOW);
-  attachInterrupt(0, wakeUp, CHANGE);
+  attachInterrupt(0, wakeUp, LOW);
 }
 
 void loop()
@@ -21,7 +21,7 @@ void wakeUp () {}
 void sleepNow () {
 set_sleep_mode(SLEEP_MODE_PWR_DOWN);
 sleep_enable();
-attachInterrupt(0,wakeUp, CHANGE);
+attachInterrupt(0,wakeUp, LOW);
 sleep_mode();  
 sleep_disable();
 detachInterrupt(0);
